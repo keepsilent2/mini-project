@@ -1,1 +1,18 @@
+greeting:
+  patterns:
+    - hi
+    - hello
+    - hey
+  responses:
+    - Hello!
+    - Hi there!
+    - Hey!
+
+bye:
+  patterns:
+    - bye
+    - goodbye
+  responses:
+    - Goodbye!
+    - See ya!
 
