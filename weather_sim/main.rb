@@ -1,6 +1,11 @@
-require_relative 'generator'
-require_relative 'report'
+require_relative "simulator"
+require_relative "graph"
 
-week = WeatherGenerator.week
-Report.print(week)
+sim = WeatherSimulator.new(7)
+data = sim.generate
 
+puts "\nTEMP:"
+Graph.line(data, :temp)
+
+puts "\nHUMIDITY:"
+Graph.line(data, :humidity)
